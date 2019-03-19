@@ -15,8 +15,7 @@
 int main()
 {
 
-
-
+    int
 
 
 
