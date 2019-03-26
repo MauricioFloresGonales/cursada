@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1553608200 source:c:\users\alumno\desktop\funciones ingresos y recursividad\ingresos.c
+	<stdlib.h>
+	"ingresos.h"
+
+1553608200 c:\users\alumno\desktop\funciones ingresos y recursividad\ingresos.h
+
+1553608230 source:c:\users\alumno\desktop\funciones ingresos y recursividad\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ingresos.h"
+	"recursividad.h"
+
+1553608200 c:\users\alumno\desktop\funciones ingresos y recursividad\recursividad.h
+
+1553608371 source:c:\users\alumno\desktop\funciones ingresos y recursividad\recursividad.c
+	"recursividad.h"
+
