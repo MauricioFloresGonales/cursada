@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "funciones.h"
 
         void cargarVector(int numerosEnteros[] ,int tam)
@@ -37,8 +38,18 @@
             return maximo;
         }
 
-        int buscarValores(int numeros[] ,int tam ,int valor)
+        int buscarValor(int numeros[],int tam,int valor)
         {
+            int indiceValor=-1;
+            int i;
 
-
+            for(i=0;i<tam;i++)
+            {
+                if(valor==numeros[i])
+                {
+                    indiceValor=i;
+                   break;
+                }
+            }
+            return indiceValor;
         }
