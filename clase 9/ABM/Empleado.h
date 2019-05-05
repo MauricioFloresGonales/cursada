@@ -1,26 +1,24 @@
-#include <stdio.h>
 
-#define LIBRE 0
-#define OCUPADO 1
+   typedef struct
+     {
+        int legajos;
+        char nombre[20];
+        char sexo;
+        float sueldoBruto;
+        float sueldoNeto;
+        int estado;
 
-typedef struct
-{
-    int legajo;
-    char nombre[20];
-    char sexo;
-    float sueldoBruto;
-    float sueldoNeto;
-    int estado;
-} eEmpleado;
+     }eEmpleado;
 
-void mostrarEmpleado(eEmpleado);
-void cargarEmpleado(eEmpleado[], int);
-void mostrarListaEmpleados(eEmpleado[], int);
+void cargarEmpleados(eEmpleado[],int);
+void mostrarUnEmpleado(eEmpleado[],int);
+void mostrarLista(eEmpleado[],int);
+void inicializarEmpleados(eEmpleado[],int);
+int buscarLibre(eEmpleado[],int);
+void hardcodearDatosEmpleados(eEmpleado[],int);
 
-int buscarLibre(eEmpleado[], int);
-void inicializarEmpleados(eEmpleado[], int);
-void hardcodearDatosEmpleados(eEmpleado[], int);
+void modificar(eEmpleado[],int,int);
+/*void modificar(eEmpleado[],int,);
+int buacarLegajo(eEmpleado[],int);*/
 
-//agregue yo
-//int cambiarDatos(eEmpleado[],int);----------- MAL.
-int cambiarDatos(eEmpleado[],int,int);
+void darDeBaja(eEmpleado[],int,int);
